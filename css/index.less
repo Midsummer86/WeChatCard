@@ -1,0 +1,206 @@
+@base:37.5;
+html {
+    font-size: 35px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+body {
+  background: #F6F6F6;
+  padding: 16rem/@base;
+  font-family: PingFangSC-Regular, sans-serif;
+}
+header {
+    width: 100%;
+    height: 482rem/@base;
+    background:#fff;
+    position: relative;
+    border-radius: 10rem/@base;
+    overflow: hidden;
+}
+.header_box1 {
+    height: 275rem/@base;
+    border-bottom: dashed 2rem/@base #F6F6F6 ;
+    overflow: hidden;
+    box-sizing: border-box;
+    h2 {
+        color: #333333;
+        text-align: center;
+        margin-top: 24rem/@base;
+        font-size: 16rem/@base;
+    }
+    .ewm {
+        width: 170rem/@base;
+        height: 170rem/@base;
+        margin: 32rem/@base auto 0;
+        background: #F0F0F0;
+    }
+}
+.header_box2 {
+  height: 207rem/@base;
+  overflow: hidden;
+  box-sizing: border-box;
+  .header_box2_box1 {
+    margin: 30rem/@base 30rem/@base 24rem/@base 25rem/@base;
+    overflow: hidden;
+    .photo {
+        width: 40rem/@base;
+        height: 40rem/@base;
+        margin-right: 20rem/@base;
+    }
+    .information {
+        width: 228rem/@base;
+        h2 {
+            font-size: 16rem/@base;
+            color: #333333;
+            font-weight: bold;
+            margin-bottom: 8rem/@base;
+        }
+        p {
+            color: #666666;
+            font-size: 12rem/@base;
+        }
+    }
+  }
+  .button {
+    width: 307rem/@base;
+    height: 44rem/@base;
+    background-color: #00d40d;
+    margin: 0 auto;
+    border-radius: 5rem/@base;
+    text-align: center;
+    line-height: 44rem/@base;
+    span {
+        display: block;
+        color: #FFFFFF;
+        font-family: Source Han Sans CN;
+        font-weight: 500;
+        font-size: 18rem/@base;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 26rem/@base;
+            height: 24rem/@base;
+            margin-right: 4.5rem/@base;
+            background: url(../images/icon.png) no-repeat;
+            background-size: 100%;
+            vertical-align: middle;
+        }
+    }
+  }
+}
+.header_radius {
+  position: absolute;
+  width: 40rem/@base;
+  height: 40rem/@base;
+  left: -20rem/@base;
+  top: 255rem/@base;
+  border-radius: 50%;
+  background-color: #F6F6F6;
+}
+.header_radius2 {
+  position: absolute;
+  width: 40rem/@base;
+  height: 40rem/@base;
+  right: -20rem/@base;
+  top: 255rem/@base;
+  border-radius: 50%;
+  background-color: #F6F6F6;
+}
+section {
+    width: 100%;
+    height: 558rem/@base;
+    margin: 10rem/@base 0 10rem/@base;
+    border-radius: 10rem/@base;
+    background-color: #fff;
+    overflow: hidden;
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16rem/@base;
+        color: #000;
+        margin: 24rem/@base auto;
+    }
+    ul {
+        padding: 0 18rem/@base;
+        li {
+            font-size: 15rem/@base;
+            list-style-type: none;
+            margin-bottom: 30rem/@base;
+            h3 {
+               margin-bottom: 10rem/@base;
+            }
+            p {
+                color: #666;
+                span {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+.alert {
+    display: none;
+    width: 320rem/@base;
+    height: 170rem/@base;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 15rem/@base;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .top {
+        height: 120rem/@base;
+        box-sizing: border-box;
+        padding: 25rem/@base 20rem/@base 0;
+        h3 {
+            margin-bottom: 10rem/@base;
+            color: #666666;
+            font-size: 16rem/@base;
+            text-align: center;
+        }
+        p {
+            font-size: 14rem/@base;
+        }
+    }
+    .footer {
+        height: 50rem/@base;
+        box-sizing: border-box;
+        border-top: solid 1rem/@base #ebedf0;
+        text-align: center;
+        line-height: 50rem/@base;
+        color: #1989fa;
+        font-size: 16rem/@base;
+    }
+}
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.donghua {
+    animation: alterShow 0.5s;
+}
+@keyframes alterShow {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
