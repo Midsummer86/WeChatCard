@@ -11,7 +11,6 @@ btn.onclick = function(){
     alert.classList.add('donghua')
     copy.setAttribute('readonly', '')
     copy.select() // 选中文本
-    copy.setSelectionRange(0, copy.value.length);
     document.execCommand("copy")
 }
 footer.onclick = function(){
