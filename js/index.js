@@ -3,13 +3,15 @@ var alert = document.querySelector(".alert")
 var footer = document.querySelector(".footer")
 var mask = document.querySelector(".mask")
 var body = document.querySelector("body")
-var e = document.getElementById("copy")
+var copy = document.getElementById("copy")
+var wechat = document.getElementById("wechat")
 btn.onclick = function(){
     alert.style.display='block'
     mask.style.display='block'
     body.style.position='fixed'
     alert.classList.add('donghua')
-    e.select() // 选中文本
+    copy.value = wechat.innerText
+    copy.select() // 选中文本
     document.execCommand("copy")
 }
 footer.onclick = function(){
