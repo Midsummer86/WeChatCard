@@ -4,14 +4,13 @@ var footer = document.querySelector(".footer")
 var mask = document.querySelector(".mask")
 var body = document.querySelector("body")
 var copy = document.getElementById("copy")
-var wechat = document.getElementById("wechat")
 btn.onclick = function(){
     alert.style.display='block'
     mask.style.display='block'
     body.style.position='fixed'
     alert.classList.add('donghua')
-    copy.value = wechat.innerText
     copy.select() // 选中文本
+    copy.setSelectionRange(0, copy.value.length);
     document.execCommand("copy")
 }
 footer.onclick = function(){
