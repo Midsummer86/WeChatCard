@@ -193,8 +193,7 @@ section ul li p span {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-#copy,
-#wechat {
+#copy {
   position: fixed;
   z-index: -1;
 }
