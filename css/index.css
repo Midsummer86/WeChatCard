@@ -115,7 +115,7 @@ header {
 }
 section {
   width: 100%;
-  height: 14.88rem;
+  height: 12.21333333rem;
   margin: 0.26666667rem 0 0.26666667rem;
   border-radius: 0.26666667rem;
   background-color: #fff;
@@ -132,7 +132,7 @@ section ul {
   padding: 0 0.48rem;
 }
 section ul li {
-  font-size: 0.4rem;
+  font-size: 0.37333333rem;
   list-style-type: none;
   margin-bottom: 0.8rem;
 }
@@ -143,7 +143,8 @@ section ul li p {
   color: #666;
 }
 section ul li p span {
-  color: orange;
+  color: red;
+  font-weight: bold;
 }
 .alert {
   display: none;
@@ -190,7 +191,11 @@ section ul li p span {
   width: 100%;
   height: 100%;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
+}
+#copy {
+  position: fixed;
+  z-index: -99;
 }
 .donghua {
   animation: alterShow 0.5s;
